@@ -5,9 +5,9 @@ Installed Node.js from app store of ubuntu
 Installed Visual Studio Code from app store
 
 
-sudo apt install -y build-essential (Install essential developmental tools)
-sudo npm install -g @angular/cli (Install Angular globally)
-sudo npm install -g typescript (Install Typescript globally - basically Javascript but modified)
+1. sudo apt install -y build-essential (Install essential developmental tools)
+2. sudo npm install -g @angular/cli (Install Angular globally)
+3. sudo npm install -g typescript (Install Typescript globally - basically Javascript but modified)
 
 
 

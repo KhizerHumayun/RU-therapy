@@ -1,0 +1,36 @@
+<h1 class="title"></h1>
+<nav>
+    <div class="container">
+        <div class="row">
+          <div class="col-xs-12 ">
+            <nav>
+              <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                <a
+                  class="nav-item nav-link active"
+                  id="nav-home-tab"
+                  data-toggle="tab"
+                  routerLink ="/ClientLogin"
+                  role="tab"
+                  aria-controls="nav-home"
+                  aria-selected="true"
+                  >  User Login
+                  </a>
+                <a
+                  class="nav-item nav-link"
+                  id="nav-profile-tab"
+                  data-toggle="tab"
+                  routerLink="/CounselorLogin"
+                  role="tab"
+                  aria-controls="nav-profile"
+                  aria-selected="false"
+                  > Login as a Counselor </a
+                >
+             </div>
+            </nav>
+            <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+            </div>
+          </div>
+        </div>
+      </div>
+      <router-outlet></router-outlet>
+</nav>

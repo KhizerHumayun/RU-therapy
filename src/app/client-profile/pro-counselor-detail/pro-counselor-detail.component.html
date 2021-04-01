@@ -1,0 +1,26 @@
+<form (ngSubmit)="onSubmit(f)" #f = "ngForm"> 
+<div *ngIf="proCounselor">
+   
+    <h1>{{proCounselor.fullName | uppercase}} </h1>
+    <h2> Details </h2>
+    <div><span> Email address: </span>{{proCounselor.netid}} </div>
+    <hr>
+    <div><h3><b> Schedule</b> </h3> 
+        <mat-radio-group
+        class="radio-group"
+        ngModel
+        name ="selectedAppointment">
+            <mat-radio-button class="radio-button" *ngFor="let schedule of proCounselor.schedule" [value]="schedule">
+                {{schedule.date}} | {{schedule.time}}
+            </mat-radio-button>
+    </mat-radio-group>
+    </div>
+
+    <div>
+        <button mat-raised-button type = "submit">Submit</button>
+    </div>  
+</div>
+</form>
+<div *ngIf = "submitted">
+    <p> Your appointment has been scheduled. Go to sessions tab for more information. </p>
+  </div>
